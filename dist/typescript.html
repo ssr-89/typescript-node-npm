@@ -1,0 +1,387 @@
+<<<<<<< HEAD
+<!doctype html><html lang="ru"><head><meta charset="UTF-8"><meta name="viewport" content="width=device-width,initial-scale=1"><title>TypeScript: main</title><link rel="shortcut icon" href="images/favicon.ico" type="image/x-icon"><script defer="defer" src="scripts.498a6ac1c45aa3e74a3c.js"></script><link href="styles.d9d7adacbb3f6167b8cb.css" rel="stylesheet"></head><body><div id="wrapper" class="wrapper"><header id="header" class="header scrollto"><div class="header__container flex"><button id="burger" class="header__burger header-burger btn flex"><span class="header-burger__line"></span></button> <a class="header__logo header-logo link" href="#">S</a><nav class="header__nav"><ul class="header__menu header-menu list flex"><li class="header-menu__item"><a href="./index.html" class="header-menu__link link"><span class="header-menu__link-text">Node.js и NPM</span></a></li><li class="header-menu__item"><span class="header-menu__link-text selected">TypeScript: main</span></li><li class="header-menu__item"><a href="#modifiers" class="header-menu__link link"><span class="header-menu__link-text">Модификаторы</span></a></li><li class="header-menu__item"><a href="#" class="header-menu__link link"><span class="header-menu__link-text">link</span></a></li><li class="header-menu__item"><a href="#" class="header-menu__link link"><span class="header-menu__link-text">link</span></a></li><li class="header-menu__item"><a href="#" class="header-menu__link link"><span class="header-menu__link-text">link</span></a></li></ul></nav></div></header><main id="main" class="main"><section id="hero" class="hero"><div class="hero__container"><h1 class="hero__title title">TypeScript</h1><p class="hero__text"><strong>TypeScript</strong>&mdash;&nbsp;предоставляет статическую типизацию, что означает, что вы&nbsp;можете задавать типы переменных, параметров функций и&nbsp;возвращаемых значений.</p><p class="hero__text">Основная цель <strong>TypeScript</strong>&nbsp;&mdash; сделать разработку более предсказуемой и&nbsp;удобной, особенно в&nbsp;больших проектах.</p><p class="hero__text"></p><p class="hero__text"></p><p class="hero__text"></p><nav class="hero__nav"><ul class="hero__menu hero-menu list flex"><li class="hero-menu__item"><a href="#tsc" class="hero-menu__link link"><span class="hero-menu__link-text">Установка TypeScript</span></a></li><li class="hero-menu__item"><a href="#compiller" class="hero-menu__link link active"><span class="hero-menu__link-text">Компиляция в JS</span></a></li><li class="hero-menu__item"><a href="#vite" class="hero-menu__link link"><span class="hero-menu__link-text">Vite</span></a></li><li class="hero-menu__item"><a href="#webpack" class="hero-menu__link link"><span class="hero-menu__link-text">Webpack</span></a></li><li class="hero-menu__item"><a href="#typing" class="hero-menu__link link"><span class="hero-menu__link-text">Основы типизации</span></a></li><li class="hero-menu__item"><a href="#object" class="hero-menu__link link"><span class="hero-menu__link-text">Типизация объектов</span></a></li><li class="hero-menu__item"><a href="#function" class="hero-menu__link link"><span class="hero-menu__link-text">Типизация функций</span></a></li><li class="hero-menu__item"><a href="#special" class="hero-menu__link link"><span class="hero-menu__link-text">Специальные типы</span></a></li><li class="hero-menu__item"><a href="#modules" class="hero-menu__link link"><span class="hero-menu__link-text">TypeScript и модули</span></a></li><li class="hero-menu__item"><a href="#example" class="hero-menu__link link"><span class="hero-menu__link-text">Пример</span></a></li><li class="hero-menu__item"><a href="#" class="hero-menu__link link"><span class="hero-menu__link-text">link</span></a></li><li class="hero-menu__item"><a href="#" class="hero-menu__link link"><span class="hero-menu__link-text">link</span></a></li></ul></nav></div></section><section id="tsc" class="tsc darkbg section-scroll"><div class="tsc__container"><h2 class="tsc__title">Установка TypeScript</h2><p class="tsc__text"><code class="tsc__code">mkdir <i>folder-template-tsc</i></code> - создание папки проекта</p><p class="tsc__text"><code class="tsc__code">cd <i>folder-template-tsc</i></code> - переход в папку проекта</p><p class="tsc__text"><code class="tsc__code">npm init</code> - инициализация проекта, создание package.json</p><p class="tsc__text"><code class="tsc__code">npm install typescript --save-dev</code> - установка TypeScript</p><p class="tsc__text"><code class="tsc__code">example.ts</code> - создание файла с кодом</p><p class="tsc__text"><code class="tsc__code">npx tsc <i>example.ts</i></code> - компиляция в JS</p></div></section><section id="compiller" class="compiller section-scroll"><div class="compiller__container"><h2 class="compiller__title">Компиляция в JS</h2><p class="compiller__text"><code class="compiller__code">npx tsc <i>index.ts</i></code></p></div></section><section id="vite" class="vite darkbg section-scroll"><div class="vite__container"><h2 class="vite__title">Vite</h2><ol class="vite__list vite-list"><li class="vite-list__item"><code class="vite-list__code">npm create vite@latest <i>vite-ts-project</i> -- --template vanilla-ts</code> - vite-ts-project (название проекта)</li><li class="vite-list__item"><code class="vite-list__code">npm init</code> - инициализация проекта, создание package.json</li><li class="vite-list__item"><code class="vite-list__code">npm install</code> - установка зависимостей</li><li class="vite-list__item"><code class="vite-list__code">npm run dev</code> - запуск dev-сервера</li></ol></div></section><section id="webpack" class="webpack section-scroll"><div class="webpack__container"><h2 class="webpack__title">Webpack</h2><ol class="webpack__list webpack-list"><li class="webpack-list__item"><code class="webpack-list__code">mkdir <i>webpack-ts</i></code> - создание папки проекта</li><li class="webpack-list__item"><code class="webpack-list__code">npm init -y</code> - инициализация проекта, создание package.json</li><li class="webpack-list__item"><code class="webpack-list__code">touch <i>webpack.config.js</i></code> - создание webpack.config.js<pre class="webpack__pre pre">
+const path = require('path');
+module.exports = {
+  mode: 'development',
+  entry: './src/index.ts',
+  output: {
+    path: path.resolve(__dirname, 'dist'),
+    filename: 'bundle.js'
+  },
+  resolve: {
+    extensions: ['.ts', '.js']
+  },
+  module: {
+    rules: [
+      {
+        test: /\.ts$/,
+        use: 'ts-loader',
+        exclude: /node_modules/,
+      }
+    ]
+  }
+}
+              </pre></li><li class="webpack-list__item"><p class="webpack-list__text">создать файл <b>index.ts</b></p></li><li class="webpack-list__item"><code class="webpack-list__code">npm install webpack webpack-cli --save-dev</code> - установка webpack</li><li class="webpack-list__item"><p class="webpack-list__text">В <b>package.json</b> прописать команды:</p><code class="webpack-list__code">"scripts": { "build": "webpack }</code></li><li class="webpack-list__item"><p class="webpack-list__text">Создание файла <b>tsconfig.json</b></p><code class="webpack-list__code">touch <i>tsconfig.json</i>:</code><pre class="webpack-list__pre pre">
+{
+  "compilerOptions": {
+    "target": "es6",
+    "module": "commonjs",
+    "strict": true
+    <i>// strictNullChecks: true</i> - проверка методов на null
+    <i>// strictFunctionTypes: true</i> - проверка типов параметров функций, переданные в аргументы
+    <i>// strictBindCallApply: true</i> - ужесточение правил для методов bind, call, apply
+    <i>// strictPropertyInitialization: true</i> - требует, чтобы все типы свойств классов были предопределены
+  }
+}          
+              </pre></li><li class="webpack-list__item"><code class="webpack-list__code">npx tsc <i>index.ts</i></code> - компиляция в JS</li><li class="webpack-list__item"><code class="webpack-list__code">npm run build</code> - запуск команды</li></ol></div></section><section id="typing" class="typing darkbg section-scroll"><div class="typing__container"><h2 class="typing__title">Основы типизации</h2><ul class="typing__list typing-list list"><li class="typing-list__item"><pre class="pre">
+const isTrue: boolean = true;
+const something: undefined = undefined;
+const add = (a: number, b: number): number =&gt; a + b;
+const arrayString: string[] = ["forst", "secont", "try"];
+const arrayBoolean: boolean[] = [true, false, true];
+const arrayOfArrBoolean: boolean[][] = [[true, false, true], [true, false, true], [true, false, true]];
+              </pre></li><li class="typing-list__item"><pre class="pre">
+class Person {
+  name: string;
+  age?: number;
+  constructor(name: string, age?: number) {
+    this.name = name;
+    this.age = age;
+  }
+}
+
+const woman = new Person("Elizabeth");
+console.log(woman); <i>// { name: "Elizabeth", age: undefined }</i>
+              </pre></li><li class="typing-list__item"><pre class="pre">
+function smth(a: string|number) {
+  if (typeof a === "number") {
+    return a*a
+  }
+  if (typeof a === "string") {
+    return `input ${a}`
+  }
+}
+
+console.log('number:' smth(5));
+console.log("string:" smth('dream'));
+              </pre></li><li class="typing-list__item"><pre class="pre">
+<i>// Литеральные типы - представляют собой способ указания конкретных значений, которые могут принимать переменные</i>
+let trafficLight: 'red' | "green" | "yellow" | "error" = "green";
+trafficLight = "yellow";
+trafficLight = "orange"; <i>// выдаст ошибку</i>
+trafficLight = "error";
+              </pre></li><li class="typing-list__item"><pre class="pre">
+<i>// enum (перечисление) - создание набора именованных констант</i>
+enum Direction {
+  Up = "up", <i>// если не присвоить значение, то будет 0</i>
+  Down = "down", <i>// если не присвоить значение, то будет 1</i>
+  Left = "left", <i>// если не присвоить значение, то будет 2</i>
+  Right = "right" <i>// если не присвоить значение, то будет 3</i>
+}
+
+let playerDirection: Direction;
+playerDirection = Direction.Up;
+if (playerDirection === Direction.Up) {
+  console.log(`Player is moving ${playerDirection}`); <i>// Player is moving up</i>
+}
+              </pre></li></ul></div></section><section id="object" class="object section-scroll"><div class="object__container"><h2 class="object__title">Типизация объектов</h2><pre class="pre">
+type ApiResponse = {
+  id: number, name: string
+}
+
+const response: ApiResponse = fetchDataFromAPI();
+          </pre><pre class="pre">
+type User = {
+  name: string,
+  age: number,
+  greet: () =&gt; void
+}
+
+const user: User = {
+  name: "John",
+  age: 30,
+  greet() {
+    console.log(`Hello! My name is ${this.name} and i'm ${this.age} years old.`);
+  }
+}
+
+console.log(user.greet());
+          </pre></div></section><section id="function" class="function darkbg section-scroll"><div class="function__container"><h2 class="function__title">Типизация функций</h2><pre class="pre">
+type Callback = {
+  (arg: string): number
+}
+
+function higherOrderFunction(callback: Callback): void {
+  <i>// Реализация функции</i>
+}
+          </pre></div></section><section id="special" class="special section-scroll"><div class="special__container"><h2 class="special__title">Специальные типы</h2><p class="special__text"><strong>any</strong>&mdash;&nbsp;любой тип и&nbsp;TypeScript не&nbsp;будет проверять его типовую совместимость во&nbsp;время компиляции.</p><pre class="pre">
+<i>// let value = 10 as any;</i>
+let value: any = 10;
+console.log(value); <i>// 10</i>
+
+value = "Hello";
+console.log(value); <i>// Hello</i>
+
+value = true;
+console.log(value); <i>// true</i>
+          </pre><br><p class="special__text"><strong>unknown</strong>&nbsp;&mdash; когда тип переменной неизвестен и&nbsp;требует явного указания типа.</p><pre class="pre">
+  let value: unknown;
+  value = 42;
+
+  if (typeof value === "number") {
+    let num: number = value; <i>// безопасно</i>
+  }
+          </pre><br><p class="special__text"><strong>never</strong>&nbsp;&mdash; когда функция никогда не&nbsp;возвращает значение или возникает ошибка.</p><pre class="pre">
+  function throwError(message: string): never {
+    throw new Error(message);
+  }
+          </pre><br><p class="special__text"><strong>void</strong>&nbsp;&mdash; указывает, что функция не&nbsp;возвращает никакого значения.</p><pre class="pre">
+const btn = document.getElementById("btn");
+
+<i>// addEventListener принадлежит к типу void</i>
+btn.addEventListener("click", () =&gt; {
+  console.log("Button clicked");
+});
+
+<i>// или</i>
+
+function log(message: string): void {
+  console.log(message);
+}
+          </pre><br><p class="special__text"><strong>Tuple</strong> - кортежи позволяют создать массив фиксированной длины с&nbsp;элементами различных типов.</p><pre class="pre">
+let tuple: [string, number];
+tuple = ["John", 30]; <i>// допустимо</i>
+          </pre><br><p class="special__text"><strong>Record</strong>&nbsp;&mdash; тип-объект, который позволяет создавать объекты с&nbsp;определенным набором ключей и&nbsp;их&nbsp;соответствующими типами значений.</p><pre class="pre">
+type Person = Record&lt;string, string | number&gt;;
+const person: Person = {
+  name: "John",
+  age: 30
+};
+          </pre><br><p class="special__text"><strong>Partial</strong>&nbsp;&mdash; утилитный тип, который позволяет создать новый тип, где все свойства оригинального типа становятся необязательными.</p><pre class="pre">
+interface User {
+  id: number;
+  name: string;
+}
+
+type PartialUser = Partial&lt;User&gt;;
+          </pre><br><p class="special__text"><strong>Required</strong>&nbsp;&mdash; противоположный `Partial`. Создает новый тип, где все свойства оригинального типа обязательны.</p><pre class="pre">
+type RequiredUser = Required&lt;PartialUser&gt;;
+          </pre><br><p class="special__text"><strong>Pick</strong> и&nbsp;<strong>Omit</strong>&nbsp;&mdash; эти утилиты позволяют создавать новые типы путем выбора или исключения определенных свойств из&nbsp;существующего типа.</p><pre class="pre">
+type PickUser = Pick&lt;User, 'id'&gt;; <i>// выбираем id</i>
+type OmitUser = Omit&lt;User, 'name'&gt;; <i>// исключаем name</i>
+          </pre></div></section><section id="modules" class="modules darkbg section-scroll"><div class="modules__container"><h2 class="modules__title">TypeScript и модули</h2><p class="modules__text">_types.ts:</p><pre class="pre">
+export type Person = {
+  name: string;
+  age: number;
+}
+          </pre><br><p class="modules__text">_utils.ts:</p><pre class="pre">
+export function greet(name: string): void {
+  console.log(`Hello, ${name}!`);
+}
+
+const country: string = "USSR";
+export { country };
+          </pre><br><p class="modules__text">index.ts:</p><pre class="pre">
+import type { Person } from "./types";
+import { greet, country } from "./utils";
+
+const man: Person = {name: "John", age: 30};
+greet("James");
+
+console.log("man:", man);
+console.log("country:", country);
+          </pre><br><br><p class="modules__text"><code>npm i <i>lodash</i> --save-dev</code> &mdash;&nbsp;это JavaScript-библиотека, которая предоставляет множество функций для работы с&nbsp;массивами, объектами, строками и&nbsp;прочими типами данных.</p><p class="modules__text">Она существенно облегчает и ускоряет процесс разработки, особенно когда речь идет о манипуляциях с данными.</p></div></section><section id="modifiers" class="modifiers section-scroll"><div class="modifiers__container"><h2 class="modifiers__title">Модификаторы</h2></div></section><section id="example" class="example section-scroll"><div class="example__container"><h2 class="example__title">Пример</h2><p class="example__text">Lorem ipsum dolor sit amet consectetur adipisicing elit. Soluta unde vero necessitatibus, vitae earum nesciunt laboriosam! Quidem error voluptatem adipisci et iusto voluptatum corporis nesciunt. Ad repellendus et autem nam! Autem dicta cupiditate perspiciatis dolores odio harum laboriosam minima repellat? Est, asperiores adipisci! Praesentium sit obcaecati ratione dolores reiciendis? Voluptas similique nobis laudantium non ea reiciendis perspiciatis dicta placeat deleniti. Animi inventore ea tenetur veritatis dolore totam, unde magni dolorum non aspernatur harum hic! Dicta provident ex accusantium qui minus quas fugiat nesciunt non. Sint dolorem veniam deserunt ad nobis. Molestias dignissimos sint ut neque nesciunt. Obcaecati illo amet aliquid, iste at quas. Animi dignissimos placeat quod. Expedita optio, accusamus commodi dolorum, quae repellendus nostrum assumenda laborum vitae, facilis exercitationem. Minima quas sapiente cumque ab dolor odio, repellendus officiis beatae, animi corporis ea ex voluptatem suscipit odit maiores quidem? Commodi doloremque dignissimos iste laudantium explicabo aspernatur excepturi earum possimus odit. Quae, voluptatibus. Ipsa perferendis excepturi autem minima dolor non numquam mollitia ut modi incidunt minus, et veritatis omnis nihil rem assumenda iste aliquam quod blanditiis nobis sed libero. Sequi, placeat. Eos enim a quidem, eligendi cum saepe explicabo? Deleniti beatae libero sunt cupiditate fugiat perferendis maiores iste tenetur culpa eveniet placeat aperiam, quae nihil commodi nam vero. Labore, molestias quos. A illo temporibus ipsam tenetur officia repudiandae dolor, natus corrupti vel velit debitis iste rerum accusamus incidunt, iure sapiente itaque soluta dolorem officiis. Eligendi dolores possimus laudantium atque cupiditate rem. Error officiis minima nulla quo? Eligendi, pariatur incidunt magni eius id nostrum ut. Deserunt dicta maxime, magnam tempora dolorem nulla optio repellat, natus corporis nostrum id ea, similique provident quibusdam. Laboriosam, possimus sit labore nihil, eius saepe architecto perferendis laudantium delectus inventore libero, similique quas totam repudiandae. Animi, expedita modi placeat est voluptatum unde odit earum ea nemo vero nostrum. At explicabo quae inventore corporis facere commodi aspernatur accusamus iste magni? Vel corporis esse nulla molestiae quaerat dolores quia illo aliquid natus ut? Dolor, repellendus! Debitis error eligendi hic omnis! Quae dolore ipsa in neque perspiciatis assumenda aspernatur sunt ipsum, magnam reiciendis sequi tempore placeat ex quaerat, nisi consequatur excepturi nemo minima nostrum labore optio quibusdam illo debitis quam. Veritatis? Explicabo tempora tempore assumenda asperiores harum iste voluptas nemo, incidunt eveniet laboriosam iure facere quas rem maiores, ex ipsum quae nihil doloremque porro minus ullam! Vitae nemo asperiores molestiae repellendus. Assumenda voluptas illum minima officiis ratione dicta dolore, quaerat nostrum soluta commodi perspiciatis veritatis nemo optio saepe a in non blanditiis. Natus debitis aut quam animi dolor est, saepe magnam. Quae vel quam dolorum, veritatis repudiandae consectetur tempore perspiciatis unde, eveniet sit obcaecati aspernatur ad provident ullam, minus eius? Explicabo quis, vero excepturi placeat dolore ducimus vel consectetur quod pariatur. Minus doloribus ipsam exercitationem rem quos enim numquam id fugit quasi. Aliquam error necessitatibus maiores assumenda libero, odio eos quia suscipit. Debitis quod magni labore amet, cupiditate id perferendis fugit? Dignissimos aut voluptatem officia voluptatibus sunt culpa, error porro at iure mollitia esse perferendis quisquam natus veniam laborum! Fuga vel veritatis ipsa saepe temporibus dignissimos quas doloremque perspiciatis, odio ipsam. Sed quae dicta nemo culpa voluptatibus nesciunt provident debitis asperiores, eaque velit nam deserunt tenetur iste facilis. Vitae facere maiores unde error, ad esse ipsa excepturi aut blanditiis, facilis commodi. Hic assumenda error nesciunt nisi aliquam in corrupti blanditiis maxime, doloribus quam, esse sit provident incidunt vel ipsum est aliquid quae nulla veniam tenetur iusto? Incidunt iure ut quas dicta. Libero veritatis rem unde eligendi voluptas officia aliquid aspernatur sed, minus eaque harum culpa sit earum accusamus temporibus quod veniam! Repudiandae accusantium cupiditate ipsam fugit maiores ad voluptatem commodi non. Sit perferendis laudantium molestiae dignissimos maiores voluptatem ipsa qui atque reiciendis nesciunt consectetur aperiam, enim officia, voluptas non! Maiores eius dolorum officiis ipsum aspernatur exercitationem provident, veritatis sapiente quisquam! Vero? Molestiae nam amet, error sint qui ullam harum sed porro ex corrupti expedita debitis unde! Quia itaque rerum officiis? Vel corporis minima unde ullam velit itaque eligendi molestias nostrum aliquam. Officia tenetur fugiat explicabo delectus aliquam nesciunt impedit laboriosam possimus. Vitae laudantium, voluptatum, optio sunt, nemo nostrum enim temporibus eaque rerum ipsum corporis ipsam. Neque enim optio provident alias obcaecati. Fuga dolorem ea excepturi doloribus ab, quod asperiores nulla ipsa eveniet officia? Dolores, necessitatibus recusandae quia dolorum consequatur hic rerum debitis amet molestiae? Odio enim inventore fugit est earum eum? Alias fugit sit, et ratione ab porro vitae deserunt error culpa, quo optio beatae earum ea praesentium nostrum excepturi adipisci. Eligendi molestiae expedita velit doloremque autem quisquam beatae quae voluptate. Officia, optio necessitatibus! Quisquam debitis delectus est fugit, itaque porro! Eos odit culpa debitis. Rerum sunt modi ipsum deserunt veniam aliquam dolor atque ut maxime? Vero minus unde quo omnis? Harum praesentium tenetur voluptatibus beatae fuga, incidunt qui culpa. Consequuntur architecto, doloremque officiis vitae expedita ex ab! Mollitia aspernatur quia natus repellendus ipsa, exercitationem harum dicta iure nulla adipisci voluptates. Dolores, voluptates ipsam esse dolorum voluptas sunt aut omnis vero possimus ex distinctio doloribus rem! Unde magnam architecto, quod harum est dolores rerum corrupti odit explicabo voluptatum nam ipsum voluptates. Est aut, itaque laboriosam quos repellendus cupiditate exercitationem. Nulla cumque nisi amet odit suscipit? Doloribus, quisquam quaerat maxime optio, hic, et ipsam veniam error eligendi quibusdam itaque libero expedita provident! Repudiandae dignissimos fugiat nemo, natus, ratione labore quaerat perspiciatis iusto blanditiis culpa iure aut cupiditate porro omnis deserunt quae veniam voluptatem error eius neque deleniti ex velit accusantium. Accusamus, eligendi? Soluta, velit vel, ea harum odio animi sed autem vitae, maxime tempora corrupti et exercitationem optio. Inventore ipsum quis, magnam animi voluptatem repellat eius adipisci commodi porro. Asperiores, nisi dolorem? Atque soluta optio magnam nisi fuga alias delectus fugiat voluptatem dolorem aperiam voluptatum at unde deserunt animi eum quasi fugit quis adipisci cumque incidunt, quo omnis voluptatibus perferendis vero! Dolorum? Impedit aliquid quisquam provident placeat, quas, vitae dolor ipsum quo suscipit explicabo molestias consequatur eligendi non cumque cupiditate illum voluptatibus sunt? Hic sunt alias accusantium, nostrum optio similique ipsam vero. Corrupti at beatae, blanditiis cumque repudiandae ab ducimus atque repellendus esse. Repellat, ducimus eius magnam, eaque cum provident accusantium quos reiciendis quae recusandae nulla officia nesciunt facere, minus id? Blanditiis! Placeat nam autem ratione soluta, modi dolorem vitae magni repellendus cupiditate eius culpa animi vero atque maiores recusandae? Quam, laborum ipsam dolorem optio totam dicta nihil sapiente ut eum placeat. Cum, sunt numquam! Tempora ea omnis quisquam corporis veritatis, adipisci laboriosam et impedit sed aspernatur quibusdam totam ullam, itaque explicabo ducimus laborum culpa provident modi! Doloribus voluptates eius esse cupiditate! Asperiores fugit est cum quia illum ducimus minima, ipsam numquam, ullam vel eius explicabo, vitae animi? Enim sed, magni voluptas provident asperiores eaque. Quia iste recusandae explicabo veniam voluptas enim! Quibusdam accusamus voluptas, odio omnis iure rerum eos. Provident earum sed officia a ipsa enim dolor fugiat odit, excepturi assumenda. Maiores optio sint animi quibusdam incidunt numquam consequuntur a qui! Magni eligendi odio sed a culpa debitis vel placeat quaerat deserunt? Animi quos obcaecati, voluptatem expedita autem aspernatur pariatur maiores dignissimos sed doloribus earum deleniti nobis magni saepe recusandae nemo. Placeat, incidunt ratione. Magni id magnam consectetur accusamus sequi ad. Magni id fuga consequuntur blanditiis illo, debitis obcaecati quaerat. Quidem voluptas dignissimos beatae. Quibusdam animi quam eaque odio aliquid aspernatur. Alias ad dolorem accusamus, facere ipsam aliquid repellendus consectetur cupiditate ipsum debitis sed eaque dicta neque molestiae nemo numquam. Assumenda error suscipit sequi esse mollitia aut incidunt beatae doloremque voluptas. Doloribus iusto possimus error! Velit fuga architecto laboriosam eius hic quam cumque sapiente, rem maiores sit natus repudiandae aperiam labore ratione magni consectetur nostrum, facilis laborum excepturi iusto. Pariatur, ullam! Laudantium consectetur obcaecati quod error labore, laboriosam, distinctio maxime blanditiis veniam esse animi sit, nostrum et! Laborum veritatis repellendus assumenda tenetur rerum labore officiis eligendi! Illo vel cum deserunt natus. Ratione quaerat consequuntur tempora ducimus perspiciatis est culpa iste voluptates debitis! Tempore possimus totam mollitia velit aspernatur, fugit, deserunt libero eum quidem veniam nobis molestias ab, rerum est sed impedit. Esse earum quasi ducimus ipsum sequi. Minima mollitia unde iusto, magnam optio pariatur iure cumque aliquam fugit cum sed quisquam enim, quidem officiis dolor alias totam quae suscipit nihil aperiam? Laborum id accusamus modi nulla facilis! Soluta sit, itaque laborum ipsam sapiente hic velit dignissimos laudantium, voluptatum corrupti esse sunt omnis blanditiis voluptate at nostrum repellendus accusamus eaque illum delectus. Aspernatur ratione cupiditate voluptatum, mollitia magni possimus perferendis ad sit illum iure? Recusandae saepe dicta natus quae repudiandae eligendi labore sint eius soluta esse ipsum, doloribus magnam corrupti similique nam? Exercitationem quo modi, fugit consequatur fuga natus quis officia non eligendi alias molestiae accusamus. Quaerat repellendus praesentium vero debitis, facere aliquid consequatur laborum numquam cumque modi esse optio. Earum, ea. Voluptatibus incidunt sequi, iusto repudiandae doloremque quidem voluptatum quibusdam quos quisquam cumque expedita unde rem dicta culpa esse quod eligendi aliquam porro nemo fuga ex facere dolor debitis fugit. Dolore. Mollitia doloribus quia deserunt odit beatae. Consectetur autem nulla a perferendis recusandae quaerat distinctio porro. Quasi excepturi commodi architecto nulla perspiciatis quis obcaecati sint repellendus et velit ut, molestias ipsa. Hic iste animi aspernatur voluptatem nesciunt dicta, dignissimos nulla consequuntur porro rerum ducimus voluptatibus placeat? Corporis laudantium voluptatibus, sunt doloribus rerum obcaecati error itaque assumenda eos ipsam non nesciunt voluptate! Cum sint ab tempora itaque laborum vero velit eius ducimus dolorem labore omnis esse dolorum odio numquam inventore unde voluptates eum, soluta accusantium eos! Beatae sequi delectus doloremque id veritatis. Ea enim excepturi debitis molestiae vitae non cumque sint voluptate sapiente soluta, exercitationem, ad animi quos asperiores! Voluptatem, doloremque a beatae magni tenetur rerum omnis qui illum numquam quos dicta! Suscipit voluptatum quibusdam aliquam earum maiores dolores ratione culpa, explicabo similique fugiat minima sit dolore reiciendis quo quia quam quasi facere at nihil optio perspiciatis. Reiciendis cupiditate rerum voluptate numquam! Magni ullam numquam voluptate sed eos! Debitis excepturi explicabo numquam amet sapiente qui accusantium. Et, ab veniam maxime ea doloremque esse porro, doloribus voluptatibus iste sequi enim? Quos, quod voluptatum? Ea sint nostrum nisi sunt deleniti beatae similique vel, consectetur natus at, tenetur placeat? Incidunt blanditiis quibusdam eveniet eaque adipisci voluptatem, consectetur officia nobis doloribus laborum! Sapiente nesciunt ducimus quidem. Quos possimus eius ab neque minus! Laboriosam, cum dolor? Laborum aliquam cum, voluptatum libero labore delectus eaque ipsa tempore ut iure, in deleniti magni nam dolore veritatis blanditiis sunt quia. Minima architecto ducimus, optio dolores saepe a sapiente tempora quo, in delectus nesciunt, laudantium neque provident mollitia consequatur. Delectus quam quos dicta! Labore in praesentium culpa, ut possimus minima tenetur? Asperiores quam dicta similique in dolorem repudiandae vitae fugit commodi ex consectetur? Consequatur tempore totam nam magnam iste! Quo velit quasi ducimus necessitatibus, atque placeat consequatur rem similique animi voluptates. Architecto vero facilis deserunt vitae quas corrupti sit ipsa quos corporis hic itaque, similique, modi voluptate. Error magni, recusandae laudantium quibusdam, esse, eligendi autem magnam totam facilis natus quaerat blanditiis! Dolorem ad doloribus consectetur, vitae magni fugiat cum corrupti exercitationem. Illo reiciendis voluptates minus placeat, ex eligendi fuga ratione autem provident perspiciatis quidem expedita quis omnis ipsam. Illo, necessitatibus officiis. Suscipit nemo ut repudiandae maxime, iusto dolorem? Explicabo labore illum sunt praesentium exercitationem a aliquam beatae reiciendis, itaque soluta architecto eum ipsam similique voluptas, nulla voluptates. Nam tempore accusantium inventore. Facere quibusdam, esse consectetur, eligendi aut fuga ipsum magnam nemo voluptatem iure aliquid corrupti quo cumque mollitia fugit quas praesentium. Rerum dolorum ex aliquam inventore quam. Mollitia provident voluptate nihil. Obcaecati autem nesciunt sequi aperiam, veritatis velit nemo iste molestias saepe labore deserunt alias tenetur placeat qui quia id nihil! Error, a. Sequi dolor doloremque error, consectetur itaque praesentium consequatur. Suscipit, voluptates officiis, culpa sapiente, inventore et nesciunt quidem nobis odio dignissimos optio perferendis harum quibusdam velit nostrum eos natus ex quia. Repellat officiis earum accusamus facilis illo aspernatur autem? Quo ratione natus aspernatur iusto velit, repudiandae ipsam facilis repellendus ullam veritatis tempora. Consectetur vel dolor modi excepturi inventore vitae exercitationem fugit? Id cupiditate distinctio iste similique aliquid impedit saepe? Reiciendis voluptatum maxime quas, accusamus commodi, et, ducimus nesciunt dolorum sint iusto repellendus aspernatur quae labore. Sed impedit ad quis, maiores reprehenderit quaerat sunt architecto ex sequi, facilis voluptate laudantium. Numquam, blanditiis ullam. Autem soluta aspernatur beatae omnis ducimus sapiente nesciunt molestiae, cum, animi cupiditate nihil suscipit incidunt laboriosam blanditiis ex officia! Voluptatum rerum suscipit id dicta blanditiis aspernatur vel. Ipsa unde incidunt nam, ad voluptatem eos doloremque harum quos adipisci voluptas vel sapiente magni necessitatibus magnam quasi culpa ducimus ex corporis quis quibusdam aliquid ipsum est tempore quod. Sequi! Maiores architecto illum, ipsam quidem commodi soluta veniam earum mollitia nihil laudantium explicabo ab enim voluptates odio sit odit nostrum, perspiciatis, tempora neque inventore culpa. Eius omnis porro voluptas nesciunt! Ipsam veniam adipisci earum, voluptates perferendis soluta iste nam cupiditate possimus asperiores architecto incidunt modi? Harum voluptates quos consequuntur minima sequi, asperiores sit perspiciatis quisquam repudiandae corporis inventore, id optio? Voluptates corporis, nihil praesentium natus nemo obcaecati saepe voluptatibus odit commodi nobis? Reiciendis, quasi obcaecati fuga dolores nesciunt voluptatem nam! Modi excepturi, aut ducimus praesentium temporibus inventore officiis illum. Laudantium! Repellat quod quidem aspernatur recusandae sint omnis facere ea cum nemo? Architecto quae molestiae dolorem. Numquam voluptatum eaque corrupti odio, maxime quidem sequi vel illo modi itaque aliquid dolores quas. Molestias impedit, obcaecati maxime, labore fuga officia hic eos fugit recusandae consequuntur adipisci iste dolor eveniet culpa dolorum vero voluptate! Reiciendis impedit, deleniti fugit voluptatibus fuga adipisci in animi sed. Veritatis recusandae eveniet ut illo corporis, eligendi ipsa illum ab laudantium, harum odio soluta aliquam mollitia incidunt ducimus sapiente sunt accusantium, quis architecto autem? Quibusdam pariatur culpa modi provident facilis. Id deleniti cum, incidunt nemo quidem nesciunt quaerat ab eos. Quasi doloremque maxime exercitationem qui animi ab consequuntur adipisci itaque rerum aspernatur facilis facere cum, ex, quidem, iste distinctio. Eos? Ullam consequuntur tempora saepe non perferendis, ducimus voluptas ipsa ex illo rerum adipisci pariatur quam quidem sequi. Soluta, et sapiente nemo adipisci cumque atque! Dicta dolorum quod distinctio perspiciatis deleniti? Consectetur neque quas voluptates quod eaque temporibus iure autem voluptatibus nobis ipsa, consequuntur ad in illo et aliquid earum magni culpa modi ducimus? Eligendi reprehenderit soluta obcaecati, eos praesentium voluptatum! Obcaecati optio, voluptatum maxime rerum laboriosam non eligendi rem? Laboriosam fuga rerum aliquam asperiores natus maiores incidunt praesentium magnam! Impedit officia deserunt sed aliquam distinctio non commodi perferendis consequuntur illo. Beatae temporibus autem, incidunt dolorum esse quia dolor fugit eius ut ipsam doloremque enim aperiam. Provident vero quia iste mollitia numquam dolorem ipsa aspernatur quibusdam, quas veritatis voluptates vitae tenetur? Ipsa harum doloremque maiores deserunt architecto illo distinctio, accusamus veritatis earum praesentium hic reiciendis, ea, sed aspernatur. Eum, officiis quam. Fuga corrupti minima facere in sed amet quidem exercitationem maiores? Ea vitae laudantium quisquam dolorem molestiae, illum voluptatum sit iste dolor officia itaque quo alias perferendis doloribus, natus quis nesciunt excepturi, dignissimos voluptate! Architecto itaque provident incidunt ipsa, expedita quasi! Consequatur ducimus ab modi accusantium architecto rem officia vel dolorem sequi, ipsum recusandae aspernatur fugit similique blanditiis maxime velit et quod mollitia error impedit facilis. Nisi reprehenderit ipsum incidunt aperiam! Voluptate, veritatis necessitatibus, nostrum possimus consequuntur magnam nemo accusamus deleniti, saepe ad laudantium veniam doloremque exercitationem enim. Quos nisi accusamus earum nostrum autem, laborum quaerat culpa, sint quod, reprehenderit ullam? Ipsa dignissimos, ab vel officia molestiae, nulla atque, sit laboriosam velit facilis earum corporis architecto qui consequatur! Animi quas eos ad rem itaque iste saepe fugit debitis, maxime quod incidunt! Voluptatem, officia a? Voluptate tempore qui rerum, itaque laborum iure dolorem. Ipsa sequi eius sit magni expedita itaque culpa eum sint, voluptates perferendis dolorem minus possimus quam pariatur harum cupiditate! Temporibus veniam dolorum laudantium, voluptate odit eaque explicabo. Exercitationem, soluta quas? Facilis veniam numquam deserunt expedita inventore ut. Facere aperiam est officiis eveniet illo fuga, repudiandae veniam? Reiciendis, incidunt. Eum! Sapiente aut culpa, corporis non eveniet ullam nesciunt, veritatis unde eaque quidem nisi dolor repudiandae fugit ipsa doloremque maiores blanditiis in cumque, modi molestiae laborum! Obcaecati delectus eum optio explicabo. Pariatur dolor sequi id aspernatur rem eligendi cum eveniet mollitia dolorem, cupiditate explicabo consectetur officia consequuntur a temporibus provident repellat molestiae dignissimos omnis, reiciendis vero similique? Sit maiores laudantium dolorem! Praesentium enim deserunt sit ipsa numquam adipisci hic voluptates. Delectus, ipsa laudantium! Totam alias placeat maiores est dolor corrupti labore velit nisi, cum magnam eos necessitatibus optio non quas atque! Maxime corporis distinctio dolor unde eum quos facere. Sapiente numquam repellat pariatur dolorem. Omnis minus eveniet est, accusantium repellendus libero autem necessitatibus praesentium odio vero animi illum totam. Nihil, libero. Repudiandae quibusdam atque blanditiis et, impedit consectetur laborum illo velit illum nemo, saepe iste quos ullam tempore, hic voluptas perferendis molestias pariatur dolorem ratione a. Excepturi delectus ipsa accusantium atque! Beatae delectus quo harum corporis blanditiis, veritatis iure temporibus! Architecto doloremque autem laudantium mollitia quisquam qui. Voluptatum, quo. Veniam pariatur labore tempore laudantium quis ipsam architecto! Enim totam adipisci dolore. Saepe ipsum ea fugiat ducimus ullam accusamus quos aspernatur cumque, dolore quidem voluptatem beatae molestias doloribus quam. Blanditiis accusamus, neque dolorem ab ipsa facere nobis voluptas molestias, eligendi dolore sunt? Necessitatibus soluta nostrum earum dolor sit modi reprehenderit? Delectus voluptatum nisi illum suscipit adipisci eligendi nemo earum iste, laborum consequuntur mollitia quos, quo culpa explicabo et at. Corporis, ea repudiandae. Dignissimos iusto architecto magnam inventore quia dolores aut ab nemo magni, aliquid, blanditiis sequi ullam quam nihil saepe, neque ducimus et error similique ea doloribus animi ipsum. Magnam, ea dolor. Ea, sit dolore quia inventore facilis dolores hic aut odit illum consequuntur esse. Eaque quam, aut perferendis, accusamus voluptatibus similique consequatur facere molestiae commodi ipsa magnam pariatur tempore et odio. Ipsa assumenda repellat nobis provident numquam et sapiente ducimus delectus, iusto, debitis officiis molestias nihil dignissimos quisquam ad non praesentium vero, perspiciatis nulla placeat repudiandae! Suscipit consequatur iusto nobis eius? Illo, nulla? Iure quae quibusdam voluptatum ut facilis magnam nihil iusto possimus aut suscipit quisquam, dolor accusantium maxime, placeat eum? Nulla voluptas dicta voluptatum? Doloribus commodi rerum obcaecati recusandae reiciendis. Ad maxime voluptatibus dolorem ab velit facilis ratione quaerat. Quaerat, magnam eos impedit facilis labore fugiat? Eius, necessitatibus, sunt placeat quia beatae iste et fugiat laudantium aliquid perspiciatis rem libero.</p></div></section></main><footer id="footer" class="footer section-scroll"><div class="footer__container"><h2 class="footer__title">FOOTER</h2></div></footer></div></body></html>
+=======
+<!doctype html><html lang="ru"><head><meta charset="UTF-8"><meta name="viewport" content="width=device-width,initial-scale=1"><title>TypeScript: main</title><link rel="shortcut icon" href="images/favicon.ico" type="image/x-icon"><script defer="defer" src="scripts.498a6ac1c45aa3e74a3c.js"></script><link href="styles.d9d7adacbb3f6167b8cb.css" rel="stylesheet"></head><body><div id="wrapper" class="wrapper"><header id="header" class="header scrollto"><div class="header__container flex"><button id="burger" class="header__burger header-burger btn flex"><span class="header-burger__line"></span></button> <a class="header__logo header-logo link" href="#">S</a><nav class="header__nav"><ul class="header__menu header-menu list flex"><li class="header-menu__item"><a href="./index.html" class="header-menu__link link"><span class="header-menu__link-text">Node.js и NPM</span></a></li><li class="header-menu__item"><span class="header-menu__link-text selected">TypeScript: main</span></li><li class="header-menu__item"><a href="#" class="header-menu__link link"><span class="header-menu__link-text">link</span></a></li><li class="header-menu__item"><a href="#" class="header-menu__link link"><span class="header-menu__link-text">link</span></a></li><li class="header-menu__item"><a href="#" class="header-menu__link link"><span class="header-menu__link-text">link</span></a></li><li class="header-menu__item"><a href="#" class="header-menu__link link"><span class="header-menu__link-text">link</span></a></li></ul></nav></div></header><main id="main" class="main"><section id="hero" class="hero"><div class="hero__container"><h1 class="hero__title title">TypeScript</h1><p class="hero__text"><strong>TypeScript</strong>&mdash;&nbsp;предоставляет статическую типизацию, что означает, что вы&nbsp;можете задавать типы переменных, параметров функций и&nbsp;возвращаемых значений.</p><p class="hero__text">Основная цель <strong>TypeScript</strong>&nbsp;&mdash; сделать разработку более предсказуемой и&nbsp;удобной, особенно в&nbsp;больших проектах.</p><p class="hero__text"></p><p class="hero__text"></p><p class="hero__text"></p><nav class="hero__nav"><ul class="hero__menu hero-menu list flex"><li class="hero-menu__item"><a href="#tsc" class="hero-menu__link link"><span class="hero-menu__link-text">Установка TypeScript</span></a></li><li class="hero-menu__item"><a href="#compiller" class="hero-menu__link link active"><span class="hero-menu__link-text">Компиляция в JS</span></a></li><li class="hero-menu__item"><a href="#vite" class="hero-menu__link link"><span class="hero-menu__link-text">Vite</span></a></li><li class="hero-menu__item"><a href="#webpack" class="hero-menu__link link"><span class="hero-menu__link-text">Webpack</span></a></li><li class="hero-menu__item"><a href="#typing" class="hero-menu__link link"><span class="hero-menu__link-text">Основы типизации</span></a></li><li class="hero-menu__item"><a href="#object" class="hero-menu__link link"><span class="hero-menu__link-text">Типизация объектов</span></a></li><li class="hero-menu__item"><a href="#function" class="hero-menu__link link"><span class="hero-menu__link-text">Типизация функций</span></a></li><li class="hero-menu__item"><a href="#special" class="hero-menu__link link"><span class="hero-menu__link-text">Специальные типы</span></a></li><li class="hero-menu__item"><a href="#modules" class="hero-menu__link link"><span class="hero-menu__link-text">TypeScript и модули</span></a></li><li class="hero-menu__item"><a href="#example" class="hero-menu__link link"><span class="hero-menu__link-text">Пример</span></a></li><li class="hero-menu__item"><a href="#" class="hero-menu__link link"><span class="hero-menu__link-text">link</span></a></li><li class="hero-menu__item"><a href="#" class="hero-menu__link link"><span class="hero-menu__link-text">link</span></a></li></ul></nav></div></section><section id="tsc" class="tsc darkbg section-scroll"><div class="tsc__container"><h2 class="tsc__title">Установка TypeScript</h2><p class="tsc__text"><code class="tsc__code">mkdir <i>folder-template-tsc</i></code> - создание папки проекта</p><p class="tsc__text"><code class="tsc__code">cd <i>folder-template-tsc</i></code> - переход в папку проекта</p><p class="tsc__text"><code class="tsc__code">npm init</code> - инициализация проекта, создание package.json</p><p class="tsc__text"><code class="tsc__code">npm install typescript --save-dev</code> - установка TypeScript</p><p class="tsc__text"><code class="tsc__code">example.ts</code> - создание файла с кодом</p><p class="tsc__text"><code class="tsc__code">npx tsc <i>example.ts</i></code> - компиляция в JS</p></div></section><section id="compiller" class="compiller section-scroll"><div class="compiller__container"><h2 class="compiller__title">Компиляция в JS</h2><p class="compiller__text"><code class="compiller__code">npx tsc <i>index.ts</i></code></p></div></section><section id="vite" class="vite darkbg section-scroll"><div class="vite__container"><h2 class="vite__title">Vite</h2><ol class="vite__list vite-list"><li class="vite-list__item"><code class="vite-list__code">npm create vite@latest <i>vite-ts-project</i> -- --template vanilla-ts</code> - vite-ts-project (название проекта)</li><li class="vite-list__item"><code class="vite-list__code">npm init</code> - инициализация проекта, создание package.json</li><li class="vite-list__item"><code class="vite-list__code">npm install</code> - установка зависимостей</li><li class="vite-list__item"><code class="vite-list__code">npm run dev</code> - запуск dev-сервера</li></ol></div></section><section id="webpack" class="webpack section-scroll"><div class="webpack__container"><h2 class="webpack__title">Webpack</h2><ol class="webpack__list webpack-list"><li class="webpack-list__item"><code class="webpack-list__code">mkdir <i>webpack-ts</i></code> - создание папки проекта</li><li class="webpack-list__item"><code class="webpack-list__code">npm init -y</code> - инициализация проекта, создание package.json</li><li class="webpack-list__item"><code class="webpack-list__code">touch <i>webpack.config.js</i></code> - создание webpack.config.js<pre class="webpack__pre pre">
+const path = require('path');
+module.exports = {
+  mode: 'development',
+  entry: './src/index.ts',
+  output: {
+    path: path.resolve(__dirname, 'dist'),
+    filename: 'bundle.js'
+  },
+  resolve: {
+    extensions: ['.ts', '.js']
+  },
+  module: {
+    rules: [
+      {
+        test: /\.ts$/,
+        use: 'ts-loader',
+        exclude: /node_modules/,
+      }
+    ]
+  }
+}
+              </pre></li><li class="webpack-list__item"><p class="webpack-list__text">создать файл <b>index.ts</b></p></li><li class="webpack-list__item"><code class="webpack-list__code">npm install webpack webpack-cli --save-dev</code> - установка webpack</li><li class="webpack-list__item"><p class="webpack-list__text">В <b>package.json</b> прописать команды:</p><code class="webpack-list__code">"scripts": { "build": "webpack }</code></li><li class="webpack-list__item"><p class="webpack-list__text">Создание файла <b>tsconfig.json</b></p><code class="webpack-list__code">touch <i>tsconfig.json</i>:</code><pre class="webpack-list__pre pre">
+{
+  "compilerOptions": {
+    "target": "es6",
+    "module": "commonjs",
+    "strict": true
+    <i>// strictNullChecks: true</i> - проверка методов на null
+    <i>// strictFunctionTypes: true</i> - проверка типов параметров функций, переданные в аргументы
+    <i>// strictBindCallApply: true</i> - ужесточение правил для методов bind, call, apply
+    <i>// strictPropertyInitialization: true</i> - требует, чтобы все типы свойств классов были предопределены
+  }
+}          
+              </pre></li><li class="webpack-list__item"><code class="webpack-list__code">npx tsc <i>index.ts</i></code> - компиляция в JS</li><li class="webpack-list__item"><code class="webpack-list__code">npm run build</code> - запуск команды</li></ol></div></section><section id="typing" class="typing darkbg section-scroll"><div class="typing__container"><h2 class="typing__title">Основы типизации</h2><ul class="typing__list typing-list list"><li class="typing-list__item"><pre class="pre">
+const isTrue: boolean = true;
+const something: undefined = undefined;
+const add = (a: number, b: number): number =&gt; a + b;
+const arrayString: string[] = ["forst", "secont", "try"];
+const arrayBoolean: boolean[] = [true, false, true];
+const arrayOfArrBoolean: boolean[][] = [[true, false, true], [true, false, true], [true, false, true]];
+              </pre></li><li class="typing-list__item"><pre class="pre">
+class Person {
+  name: string;
+  age?: number;
+  constructor(name: string, age?: number) {
+    this.name = name;
+    this.age = age;
+  }
+}
+
+const woman = new Person("Elizabeth");
+console.log(woman); <i>// { name: "Elizabeth", age: undefined }</i>
+              </pre></li><li class="typing-list__item"><pre class="pre">
+function smth(a: string|number) {
+  if (typeof a === "number") {
+    return a*a
+  }
+  if (typeof a === "string") {
+    return `input ${a}`
+  }
+}
+
+console.log('number:' smth(5));
+console.log("string:" smth('dream'));
+              </pre></li><li class="typing-list__item"><pre class="pre">
+<i>// Литеральные типы - представляют собой способ указания конкретных значений, которые могут принимать переменные</i>
+let trafficLight: 'red' | "green" | "yellow" | "error" = "green";
+trafficLight = "yellow";
+trafficLight = "orange"; <i>// выдаст ошибку</i>
+trafficLight = "error";
+              </pre></li><li class="typing-list__item"><pre class="pre">
+<i>// enum (перечисление) - создание набора именованных констант</i>
+enum Direction {
+  Up = "up", <i>// если не присвоить значение, то будет 0</i>
+  Down = "down", <i>// если не присвоить значение, то будет 1</i>
+  Left = "left", <i>// если не присвоить значение, то будет 2</i>
+  Right = "right" <i>// если не присвоить значение, то будет 3</i>
+}
+
+let playerDirection: Direction;
+playerDirection = Direction.Up;
+if (playerDirection === Direction.Up) {
+  console.log(`Player is moving ${playerDirection}`); <i>// Player is moving up</i>
+}
+              </pre></li></ul></div></section><section id="object" class="object section-scroll"><div class="object__container"><h2 class="object__title">Типизация объектов</h2><pre class="pre">
+type ApiResponse = {
+  id: number, name: string
+}
+
+const response: ApiResponse = fetchDataFromAPI();
+          </pre><pre class="pre">
+type User = {
+  name: string,
+  age: number,
+  greet: () =&gt; void
+}
+
+const user: User = {
+  name: "John",
+  age: 30,
+  greet() {
+    console.log(`Hello! My name is ${this.name} and i'm ${this.age} years old.`);
+  }
+}
+
+console.log(user.greet());
+          </pre></div></section><section id="function" class="function darkbg section-scroll"><div class="function__container"><h2 class="function__title">Типизация функций</h2><pre class="pre">
+type Callback = {
+  (arg: string): number
+}
+
+function higherOrderFunction(callback: Callback): void {
+  <i>// Реализация функции</i>
+}
+          </pre></div></section><section id="special" class="special section-scroll"><div class="special__container"><h2 class="special__title">Специальные типы</h2><p class="special__text"><strong>any</strong>&mdash;&nbsp;любой тип и&nbsp;TypeScript не&nbsp;будет проверять его типовую совместимость во&nbsp;время компиляции.</p><pre class="pre">
+<i>// let value = 10 as any;</i>
+let value: any = 10;
+console.log(value); <i>// 10</i>
+
+value = "Hello";
+console.log(value); <i>// Hello</i>
+
+value = true;
+console.log(value); <i>// true</i>
+          </pre><br><p class="special__text"><strong>unknown</strong>&nbsp;&mdash; когда тип переменной неизвестен и&nbsp;требует явного указания типа.</p><pre class="pre">
+  let value: unknown;
+  value = 42;
+
+  if (typeof value === "number") {
+    let num: number = value; <i>// безопасно</i>
+  }
+          </pre><br><p class="special__text"><strong>never</strong>&nbsp;&mdash; когда функция никогда не&nbsp;возвращает значение или возникает ошибка.</p><pre class="pre">
+  function throwError(message: string): never {
+    throw new Error(message);
+  }
+          </pre><br><p class="special__text"><strong>void</strong>&nbsp;&mdash; указывает, что функция не&nbsp;возвращает никакого значения.</p><pre class="pre">
+const btn = document.getElementById("btn");
+
+<i>// addEventListener принадлежит к типу void</i>
+btn.addEventListener("click", () =&gt; {
+  console.log("Button clicked");
+});
+
+<i>// или</i>
+
+function log(message: string): void {
+  console.log(message);
+}
+          </pre><br><p class="special__text"><strong>Tuple</strong> - кортежи позволяют создать массив фиксированной длины с&nbsp;элементами различных типов.</p><pre class="pre">
+let tuple: [string, number];
+tuple = ["John", 30]; <i>// допустимо</i>
+          </pre><br><p class="special__text"><strong>Record</strong>&nbsp;&mdash; тип-объект, который позволяет создавать объекты с&nbsp;определенным набором ключей и&nbsp;их&nbsp;соответствующими типами значений.</p><pre class="pre">
+type Person = Record&lt;string, string | number&gt;;
+const person: Person = {
+  name: "John",
+  age: 30
+};
+          </pre><br><p class="special__text"><strong>Partial</strong>&nbsp;&mdash; утилитный тип, который позволяет создать новый тип, где все свойства оригинального типа становятся необязательными.</p><pre class="pre">
+interface User {
+  id: number;
+  name: string;
+}
+
+type PartialUser = Partial&lt;User&gt;;
+          </pre><br><p class="special__text"><strong>Required</strong>&nbsp;&mdash; противоположный `Partial`. Создает новый тип, где все свойства оригинального типа обязательны.</p><pre class="pre">
+type RequiredUser = Required&lt;PartialUser&gt;;
+          </pre><br><p class="special__text"><strong>Pick</strong> и&nbsp;<strong>Omit</strong>&nbsp;&mdash; эти утилиты позволяют создавать новые типы путем выбора или исключения определенных свойств из&nbsp;существующего типа.</p><pre class="pre">
+type PickUser = Pick&lt;User, 'id'&gt;; <i>// выбираем id</i>
+type OmitUser = Omit&lt;User, 'name'&gt;; <i>// исключаем name</i>
+          </pre></div></section><section id="modules" class="modules darkbg section-scroll"><div class="modules__container"><h2 class="modules__title">TypeScript и модули</h2><p class="modules__text">_types.ts:</p><pre class="pre">
+export type Person = {
+  name: string;
+  age: number;
+}
+          </pre><br><p class="modules__text">_utils.ts:</p><pre class="pre">
+export function greet(name: string): void {
+  console.log(`Hello, ${name}!`);
+}
+
+const country: string = "USSR";
+export { country };
+          </pre><br><p class="modules__text">index.ts:</p><pre class="pre">
+import type { Person } from "./types";
+import { greet, country } from "./utils";
+
+const man: Person = {name: "John", age: 30};
+greet("James");
+
+console.log("man:", man);
+console.log("country:", country);
+          </pre><br><br><p class="modules__text"><code>npm i <i>lodash</i> --save-dev</code> &mdash;&nbsp;это JavaScript-библиотека, которая предоставляет множество функций для работы с&nbsp;массивами, объектами, строками и&nbsp;прочими типами данных.</p><p class="modules__text">Она существенно облегчает и ускоряет процесс разработки, особенно когда речь идет о манипуляциях с данными.</p></div></section><section id="example" class="example section-scroll"><div class="example__container"><h2 class="example__title">Пример</h2><p class="example__text">Lorem ipsum dolor sit amet consectetur adipisicing elit. Soluta unde vero necessitatibus, vitae earum nesciunt laboriosam! Quidem error voluptatem adipisci et iusto voluptatum corporis nesciunt. Ad repellendus et autem nam! Autem dicta cupiditate perspiciatis dolores odio harum laboriosam minima repellat? Est, asperiores adipisci! Praesentium sit obcaecati ratione dolores reiciendis? Voluptas similique nobis laudantium non ea reiciendis perspiciatis dicta placeat deleniti. Animi inventore ea tenetur veritatis dolore totam, unde magni dolorum non aspernatur harum hic! Dicta provident ex accusantium qui minus quas fugiat nesciunt non. Sint dolorem veniam deserunt ad nobis. Molestias dignissimos sint ut neque nesciunt. Obcaecati illo amet aliquid, iste at quas. Animi dignissimos placeat quod. Expedita optio, accusamus commodi dolorum, quae repellendus nostrum assumenda laborum vitae, facilis exercitationem. Minima quas sapiente cumque ab dolor odio, repellendus officiis beatae, animi corporis ea ex voluptatem suscipit odit maiores quidem? Commodi doloremque dignissimos iste laudantium explicabo aspernatur excepturi earum possimus odit. Quae, voluptatibus. Ipsa perferendis excepturi autem minima dolor non numquam mollitia ut modi incidunt minus, et veritatis omnis nihil rem assumenda iste aliquam quod blanditiis nobis sed libero. Sequi, placeat. Eos enim a quidem, eligendi cum saepe explicabo? Deleniti beatae libero sunt cupiditate fugiat perferendis maiores iste tenetur culpa eveniet placeat aperiam, quae nihil commodi nam vero. Labore, molestias quos. A illo temporibus ipsam tenetur officia repudiandae dolor, natus corrupti vel velit debitis iste rerum accusamus incidunt, iure sapiente itaque soluta dolorem officiis. Eligendi dolores possimus laudantium atque cupiditate rem. Error officiis minima nulla quo? Eligendi, pariatur incidunt magni eius id nostrum ut. Deserunt dicta maxime, magnam tempora dolorem nulla optio repellat, natus corporis nostrum id ea, similique provident quibusdam. Laboriosam, possimus sit labore nihil, eius saepe architecto perferendis laudantium delectus inventore libero, similique quas totam repudiandae. Animi, expedita modi placeat est voluptatum unde odit earum ea nemo vero nostrum. At explicabo quae inventore corporis facere commodi aspernatur accusamus iste magni? Vel corporis esse nulla molestiae quaerat dolores quia illo aliquid natus ut? Dolor, repellendus! Debitis error eligendi hic omnis! Quae dolore ipsa in neque perspiciatis assumenda aspernatur sunt ipsum, magnam reiciendis sequi tempore placeat ex quaerat, nisi consequatur excepturi nemo minima nostrum labore optio quibusdam illo debitis quam. Veritatis? Explicabo tempora tempore assumenda asperiores harum iste voluptas nemo, incidunt eveniet laboriosam iure facere quas rem maiores, ex ipsum quae nihil doloremque porro minus ullam! Vitae nemo asperiores molestiae repellendus. Assumenda voluptas illum minima officiis ratione dicta dolore, quaerat nostrum soluta commodi perspiciatis veritatis nemo optio saepe a in non blanditiis. Natus debitis aut quam animi dolor est, saepe magnam. Quae vel quam dolorum, veritatis repudiandae consectetur tempore perspiciatis unde, eveniet sit obcaecati aspernatur ad provident ullam, minus eius? Explicabo quis, vero excepturi placeat dolore ducimus vel consectetur quod pariatur. Minus doloribus ipsam exercitationem rem quos enim numquam id fugit quasi. Aliquam error necessitatibus maiores assumenda libero, odio eos quia suscipit. Debitis quod magni labore amet, cupiditate id perferendis fugit? Dignissimos aut voluptatem officia voluptatibus sunt culpa, error porro at iure mollitia esse perferendis quisquam natus veniam laborum! Fuga vel veritatis ipsa saepe temporibus dignissimos quas doloremque perspiciatis, odio ipsam. Sed quae dicta nemo culpa voluptatibus nesciunt provident debitis asperiores, eaque velit nam deserunt tenetur iste facilis. Vitae facere maiores unde error, ad esse ipsa excepturi aut blanditiis, facilis commodi. Hic assumenda error nesciunt nisi aliquam in corrupti blanditiis maxime, doloribus quam, esse sit provident incidunt vel ipsum est aliquid quae nulla veniam tenetur iusto? Incidunt iure ut quas dicta. Libero veritatis rem unde eligendi voluptas officia aliquid aspernatur sed, minus eaque harum culpa sit earum accusamus temporibus quod veniam! Repudiandae accusantium cupiditate ipsam fugit maiores ad voluptatem commodi non. Sit perferendis laudantium molestiae dignissimos maiores voluptatem ipsa qui atque reiciendis nesciunt consectetur aperiam, enim officia, voluptas non! Maiores eius dolorum officiis ipsum aspernatur exercitationem provident, veritatis sapiente quisquam! Vero? Molestiae nam amet, error sint qui ullam harum sed porro ex corrupti expedita debitis unde! Quia itaque rerum officiis? Vel corporis minima unde ullam velit itaque eligendi molestias nostrum aliquam. Officia tenetur fugiat explicabo delectus aliquam nesciunt impedit laboriosam possimus. Vitae laudantium, voluptatum, optio sunt, nemo nostrum enim temporibus eaque rerum ipsum corporis ipsam. Neque enim optio provident alias obcaecati. Fuga dolorem ea excepturi doloribus ab, quod asperiores nulla ipsa eveniet officia? Dolores, necessitatibus recusandae quia dolorum consequatur hic rerum debitis amet molestiae? Odio enim inventore fugit est earum eum? Alias fugit sit, et ratione ab porro vitae deserunt error culpa, quo optio beatae earum ea praesentium nostrum excepturi adipisci. Eligendi molestiae expedita velit doloremque autem quisquam beatae quae voluptate. Officia, optio necessitatibus! Quisquam debitis delectus est fugit, itaque porro! Eos odit culpa debitis. Rerum sunt modi ipsum deserunt veniam aliquam dolor atque ut maxime? Vero minus unde quo omnis? Harum praesentium tenetur voluptatibus beatae fuga, incidunt qui culpa. Consequuntur architecto, doloremque officiis vitae expedita ex ab! Mollitia aspernatur quia natus repellendus ipsa, exercitationem harum dicta iure nulla adipisci voluptates. Dolores, voluptates ipsam esse dolorum voluptas sunt aut omnis vero possimus ex distinctio doloribus rem! Unde magnam architecto, quod harum est dolores rerum corrupti odit explicabo voluptatum nam ipsum voluptates. Est aut, itaque laboriosam quos repellendus cupiditate exercitationem. Nulla cumque nisi amet odit suscipit? Doloribus, quisquam quaerat maxime optio, hic, et ipsam veniam error eligendi quibusdam itaque libero expedita provident! Repudiandae dignissimos fugiat nemo, natus, ratione labore quaerat perspiciatis iusto blanditiis culpa iure aut cupiditate porro omnis deserunt quae veniam voluptatem error eius neque deleniti ex velit accusantium. Accusamus, eligendi? Soluta, velit vel, ea harum odio animi sed autem vitae, maxime tempora corrupti et exercitationem optio. Inventore ipsum quis, magnam animi voluptatem repellat eius adipisci commodi porro. Asperiores, nisi dolorem? Atque soluta optio magnam nisi fuga alias delectus fugiat voluptatem dolorem aperiam voluptatum at unde deserunt animi eum quasi fugit quis adipisci cumque incidunt, quo omnis voluptatibus perferendis vero! Dolorum? Impedit aliquid quisquam provident placeat, quas, vitae dolor ipsum quo suscipit explicabo molestias consequatur eligendi non cumque cupiditate illum voluptatibus sunt? Hic sunt alias accusantium, nostrum optio similique ipsam vero. Corrupti at beatae, blanditiis cumque repudiandae ab ducimus atque repellendus esse. Repellat, ducimus eius magnam, eaque cum provident accusantium quos reiciendis quae recusandae nulla officia nesciunt facere, minus id? Blanditiis! Placeat nam autem ratione soluta, modi dolorem vitae magni repellendus cupiditate eius culpa animi vero atque maiores recusandae? Quam, laborum ipsam dolorem optio totam dicta nihil sapiente ut eum placeat. Cum, sunt numquam! Tempora ea omnis quisquam corporis veritatis, adipisci laboriosam et impedit sed aspernatur quibusdam totam ullam, itaque explicabo ducimus laborum culpa provident modi! Doloribus voluptates eius esse cupiditate! Asperiores fugit est cum quia illum ducimus minima, ipsam numquam, ullam vel eius explicabo, vitae animi? Enim sed, magni voluptas provident asperiores eaque. Quia iste recusandae explicabo veniam voluptas enim! Quibusdam accusamus voluptas, odio omnis iure rerum eos. Provident earum sed officia a ipsa enim dolor fugiat odit, excepturi assumenda. Maiores optio sint animi quibusdam incidunt numquam consequuntur a qui! Magni eligendi odio sed a culpa debitis vel placeat quaerat deserunt? Animi quos obcaecati, voluptatem expedita autem aspernatur pariatur maiores dignissimos sed doloribus earum deleniti nobis magni saepe recusandae nemo. Placeat, incidunt ratione. Magni id magnam consectetur accusamus sequi ad. Magni id fuga consequuntur blanditiis illo, debitis obcaecati quaerat. Quidem voluptas dignissimos beatae. Quibusdam animi quam eaque odio aliquid aspernatur. Alias ad dolorem accusamus, facere ipsam aliquid repellendus consectetur cupiditate ipsum debitis sed eaque dicta neque molestiae nemo numquam. Assumenda error suscipit sequi esse mollitia aut incidunt beatae doloremque voluptas. Doloribus iusto possimus error! Velit fuga architecto laboriosam eius hic quam cumque sapiente, rem maiores sit natus repudiandae aperiam labore ratione magni consectetur nostrum, facilis laborum excepturi iusto. Pariatur, ullam! Laudantium consectetur obcaecati quod error labore, laboriosam, distinctio maxime blanditiis veniam esse animi sit, nostrum et! Laborum veritatis repellendus assumenda tenetur rerum labore officiis eligendi! Illo vel cum deserunt natus. Ratione quaerat consequuntur tempora ducimus perspiciatis est culpa iste voluptates debitis! Tempore possimus totam mollitia velit aspernatur, fugit, deserunt libero eum quidem veniam nobis molestias ab, rerum est sed impedit. Esse earum quasi ducimus ipsum sequi. Minima mollitia unde iusto, magnam optio pariatur iure cumque aliquam fugit cum sed quisquam enim, quidem officiis dolor alias totam quae suscipit nihil aperiam? Laborum id accusamus modi nulla facilis! Soluta sit, itaque laborum ipsam sapiente hic velit dignissimos laudantium, voluptatum corrupti esse sunt omnis blanditiis voluptate at nostrum repellendus accusamus eaque illum delectus. Aspernatur ratione cupiditate voluptatum, mollitia magni possimus perferendis ad sit illum iure? Recusandae saepe dicta natus quae repudiandae eligendi labore sint eius soluta esse ipsum, doloribus magnam corrupti similique nam? Exercitationem quo modi, fugit consequatur fuga natus quis officia non eligendi alias molestiae accusamus. Quaerat repellendus praesentium vero debitis, facere aliquid consequatur laborum numquam cumque modi esse optio. Earum, ea. Voluptatibus incidunt sequi, iusto repudiandae doloremque quidem voluptatum quibusdam quos quisquam cumque expedita unde rem dicta culpa esse quod eligendi aliquam porro nemo fuga ex facere dolor debitis fugit. Dolore. Mollitia doloribus quia deserunt odit beatae. Consectetur autem nulla a perferendis recusandae quaerat distinctio porro. Quasi excepturi commodi architecto nulla perspiciatis quis obcaecati sint repellendus et velit ut, molestias ipsa. Hic iste animi aspernatur voluptatem nesciunt dicta, dignissimos nulla consequuntur porro rerum ducimus voluptatibus placeat? Corporis laudantium voluptatibus, sunt doloribus rerum obcaecati error itaque assumenda eos ipsam non nesciunt voluptate! Cum sint ab tempora itaque laborum vero velit eius ducimus dolorem labore omnis esse dolorum odio numquam inventore unde voluptates eum, soluta accusantium eos! Beatae sequi delectus doloremque id veritatis. Ea enim excepturi debitis molestiae vitae non cumque sint voluptate sapiente soluta, exercitationem, ad animi quos asperiores! Voluptatem, doloremque a beatae magni tenetur rerum omnis qui illum numquam quos dicta! Suscipit voluptatum quibusdam aliquam earum maiores dolores ratione culpa, explicabo similique fugiat minima sit dolore reiciendis quo quia quam quasi facere at nihil optio perspiciatis. Reiciendis cupiditate rerum voluptate numquam! Magni ullam numquam voluptate sed eos! Debitis excepturi explicabo numquam amet sapiente qui accusantium. Et, ab veniam maxime ea doloremque esse porro, doloribus voluptatibus iste sequi enim? Quos, quod voluptatum? Ea sint nostrum nisi sunt deleniti beatae similique vel, consectetur natus at, tenetur placeat? Incidunt blanditiis quibusdam eveniet eaque adipisci voluptatem, consectetur officia nobis doloribus laborum! Sapiente nesciunt ducimus quidem. Quos possimus eius ab neque minus! Laboriosam, cum dolor? Laborum aliquam cum, voluptatum libero labore delectus eaque ipsa tempore ut iure, in deleniti magni nam dolore veritatis blanditiis sunt quia. Minima architecto ducimus, optio dolores saepe a sapiente tempora quo, in delectus nesciunt, laudantium neque provident mollitia consequatur. Delectus quam quos dicta! Labore in praesentium culpa, ut possimus minima tenetur? Asperiores quam dicta similique in dolorem repudiandae vitae fugit commodi ex consectetur? Consequatur tempore totam nam magnam iste! Quo velit quasi ducimus necessitatibus, atque placeat consequatur rem similique animi voluptates. Architecto vero facilis deserunt vitae quas corrupti sit ipsa quos corporis hic itaque, similique, modi voluptate. Error magni, recusandae laudantium quibusdam, esse, eligendi autem magnam totam facilis natus quaerat blanditiis! Dolorem ad doloribus consectetur, vitae magni fugiat cum corrupti exercitationem. Illo reiciendis voluptates minus placeat, ex eligendi fuga ratione autem provident perspiciatis quidem expedita quis omnis ipsam. Illo, necessitatibus officiis. Suscipit nemo ut repudiandae maxime, iusto dolorem? Explicabo labore illum sunt praesentium exercitationem a aliquam beatae reiciendis, itaque soluta architecto eum ipsam similique voluptas, nulla voluptates. Nam tempore accusantium inventore. Facere quibusdam, esse consectetur, eligendi aut fuga ipsum magnam nemo voluptatem iure aliquid corrupti quo cumque mollitia fugit quas praesentium. Rerum dolorum ex aliquam inventore quam. Mollitia provident voluptate nihil. Obcaecati autem nesciunt sequi aperiam, veritatis velit nemo iste molestias saepe labore deserunt alias tenetur placeat qui quia id nihil! Error, a. Sequi dolor doloremque error, consectetur itaque praesentium consequatur. Suscipit, voluptates officiis, culpa sapiente, inventore et nesciunt quidem nobis odio dignissimos optio perferendis harum quibusdam velit nostrum eos natus ex quia. Repellat officiis earum accusamus facilis illo aspernatur autem? Quo ratione natus aspernatur iusto velit, repudiandae ipsam facilis repellendus ullam veritatis tempora. Consectetur vel dolor modi excepturi inventore vitae exercitationem fugit? Id cupiditate distinctio iste similique aliquid impedit saepe? Reiciendis voluptatum maxime quas, accusamus commodi, et, ducimus nesciunt dolorum sint iusto repellendus aspernatur quae labore. Sed impedit ad quis, maiores reprehenderit quaerat sunt architecto ex sequi, facilis voluptate laudantium. Numquam, blanditiis ullam. Autem soluta aspernatur beatae omnis ducimus sapiente nesciunt molestiae, cum, animi cupiditate nihil suscipit incidunt laboriosam blanditiis ex officia! Voluptatum rerum suscipit id dicta blanditiis aspernatur vel. Ipsa unde incidunt nam, ad voluptatem eos doloremque harum quos adipisci voluptas vel sapiente magni necessitatibus magnam quasi culpa ducimus ex corporis quis quibusdam aliquid ipsum est tempore quod. Sequi! Maiores architecto illum, ipsam quidem commodi soluta veniam earum mollitia nihil laudantium explicabo ab enim voluptates odio sit odit nostrum, perspiciatis, tempora neque inventore culpa. Eius omnis porro voluptas nesciunt! Ipsam veniam adipisci earum, voluptates perferendis soluta iste nam cupiditate possimus asperiores architecto incidunt modi? Harum voluptates quos consequuntur minima sequi, asperiores sit perspiciatis quisquam repudiandae corporis inventore, id optio? Voluptates corporis, nihil praesentium natus nemo obcaecati saepe voluptatibus odit commodi nobis? Reiciendis, quasi obcaecati fuga dolores nesciunt voluptatem nam! Modi excepturi, aut ducimus praesentium temporibus inventore officiis illum. Laudantium! Repellat quod quidem aspernatur recusandae sint omnis facere ea cum nemo? Architecto quae molestiae dolorem. Numquam voluptatum eaque corrupti odio, maxime quidem sequi vel illo modi itaque aliquid dolores quas. Molestias impedit, obcaecati maxime, labore fuga officia hic eos fugit recusandae consequuntur adipisci iste dolor eveniet culpa dolorum vero voluptate! Reiciendis impedit, deleniti fugit voluptatibus fuga adipisci in animi sed. Veritatis recusandae eveniet ut illo corporis, eligendi ipsa illum ab laudantium, harum odio soluta aliquam mollitia incidunt ducimus sapiente sunt accusantium, quis architecto autem? Quibusdam pariatur culpa modi provident facilis. Id deleniti cum, incidunt nemo quidem nesciunt quaerat ab eos. Quasi doloremque maxime exercitationem qui animi ab consequuntur adipisci itaque rerum aspernatur facilis facere cum, ex, quidem, iste distinctio. Eos? Ullam consequuntur tempora saepe non perferendis, ducimus voluptas ipsa ex illo rerum adipisci pariatur quam quidem sequi. Soluta, et sapiente nemo adipisci cumque atque! Dicta dolorum quod distinctio perspiciatis deleniti? Consectetur neque quas voluptates quod eaque temporibus iure autem voluptatibus nobis ipsa, consequuntur ad in illo et aliquid earum magni culpa modi ducimus? Eligendi reprehenderit soluta obcaecati, eos praesentium voluptatum! Obcaecati optio, voluptatum maxime rerum laboriosam non eligendi rem? Laboriosam fuga rerum aliquam asperiores natus maiores incidunt praesentium magnam! Impedit officia deserunt sed aliquam distinctio non commodi perferendis consequuntur illo. Beatae temporibus autem, incidunt dolorum esse quia dolor fugit eius ut ipsam doloremque enim aperiam. Provident vero quia iste mollitia numquam dolorem ipsa aspernatur quibusdam, quas veritatis voluptates vitae tenetur? Ipsa harum doloremque maiores deserunt architecto illo distinctio, accusamus veritatis earum praesentium hic reiciendis, ea, sed aspernatur. Eum, officiis quam. Fuga corrupti minima facere in sed amet quidem exercitationem maiores? Ea vitae laudantium quisquam dolorem molestiae, illum voluptatum sit iste dolor officia itaque quo alias perferendis doloribus, natus quis nesciunt excepturi, dignissimos voluptate! Architecto itaque provident incidunt ipsa, expedita quasi! Consequatur ducimus ab modi accusantium architecto rem officia vel dolorem sequi, ipsum recusandae aspernatur fugit similique blanditiis maxime velit et quod mollitia error impedit facilis. Nisi reprehenderit ipsum incidunt aperiam! Voluptate, veritatis necessitatibus, nostrum possimus consequuntur magnam nemo accusamus deleniti, saepe ad laudantium veniam doloremque exercitationem enim. Quos nisi accusamus earum nostrum autem, laborum quaerat culpa, sint quod, reprehenderit ullam? Ipsa dignissimos, ab vel officia molestiae, nulla atque, sit laboriosam velit facilis earum corporis architecto qui consequatur! Animi quas eos ad rem itaque iste saepe fugit debitis, maxime quod incidunt! Voluptatem, officia a? Voluptate tempore qui rerum, itaque laborum iure dolorem. Ipsa sequi eius sit magni expedita itaque culpa eum sint, voluptates perferendis dolorem minus possimus quam pariatur harum cupiditate! Temporibus veniam dolorum laudantium, voluptate odit eaque explicabo. Exercitationem, soluta quas? Facilis veniam numquam deserunt expedita inventore ut. Facere aperiam est officiis eveniet illo fuga, repudiandae veniam? Reiciendis, incidunt. Eum! Sapiente aut culpa, corporis non eveniet ullam nesciunt, veritatis unde eaque quidem nisi dolor repudiandae fugit ipsa doloremque maiores blanditiis in cumque, modi molestiae laborum! Obcaecati delectus eum optio explicabo. Pariatur dolor sequi id aspernatur rem eligendi cum eveniet mollitia dolorem, cupiditate explicabo consectetur officia consequuntur a temporibus provident repellat molestiae dignissimos omnis, reiciendis vero similique? Sit maiores laudantium dolorem! Praesentium enim deserunt sit ipsa numquam adipisci hic voluptates. Delectus, ipsa laudantium! Totam alias placeat maiores est dolor corrupti labore velit nisi, cum magnam eos necessitatibus optio non quas atque! Maxime corporis distinctio dolor unde eum quos facere. Sapiente numquam repellat pariatur dolorem. Omnis minus eveniet est, accusantium repellendus libero autem necessitatibus praesentium odio vero animi illum totam. Nihil, libero. Repudiandae quibusdam atque blanditiis et, impedit consectetur laborum illo velit illum nemo, saepe iste quos ullam tempore, hic voluptas perferendis molestias pariatur dolorem ratione a. Excepturi delectus ipsa accusantium atque! Beatae delectus quo harum corporis blanditiis, veritatis iure temporibus! Architecto doloremque autem laudantium mollitia quisquam qui. Voluptatum, quo. Veniam pariatur labore tempore laudantium quis ipsam architecto! Enim totam adipisci dolore. Saepe ipsum ea fugiat ducimus ullam accusamus quos aspernatur cumque, dolore quidem voluptatem beatae molestias doloribus quam. Blanditiis accusamus, neque dolorem ab ipsa facere nobis voluptas molestias, eligendi dolore sunt? Necessitatibus soluta nostrum earum dolor sit modi reprehenderit? Delectus voluptatum nisi illum suscipit adipisci eligendi nemo earum iste, laborum consequuntur mollitia quos, quo culpa explicabo et at. Corporis, ea repudiandae. Dignissimos iusto architecto magnam inventore quia dolores aut ab nemo magni, aliquid, blanditiis sequi ullam quam nihil saepe, neque ducimus et error similique ea doloribus animi ipsum. Magnam, ea dolor. Ea, sit dolore quia inventore facilis dolores hic aut odit illum consequuntur esse. Eaque quam, aut perferendis, accusamus voluptatibus similique consequatur facere molestiae commodi ipsa magnam pariatur tempore et odio. Ipsa assumenda repellat nobis provident numquam et sapiente ducimus delectus, iusto, debitis officiis molestias nihil dignissimos quisquam ad non praesentium vero, perspiciatis nulla placeat repudiandae! Suscipit consequatur iusto nobis eius? Illo, nulla? Iure quae quibusdam voluptatum ut facilis magnam nihil iusto possimus aut suscipit quisquam, dolor accusantium maxime, placeat eum? Nulla voluptas dicta voluptatum? Doloribus commodi rerum obcaecati recusandae reiciendis. Ad maxime voluptatibus dolorem ab velit facilis ratione quaerat. Quaerat, magnam eos impedit facilis labore fugiat? Eius, necessitatibus, sunt placeat quia beatae iste et fugiat laudantium aliquid perspiciatis rem libero.</p></div></section></main><footer id="footer" class="footer section-scroll"><div class="footer__container"><h2 class="footer__title">FOOTER</h2></div></footer></div></body></html>
+>>>>>>> 3821eea5a15020695e254eb937c629f62458c445
