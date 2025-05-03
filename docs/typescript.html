@@ -1135,6 +1135,18 @@ function add(a: any, b: any): any {
 
 console.log(add(1, 2)); <i>// 3</i>
 console.log(add('Hello, ', 'World!')); <i>// Hello, World!</i>
+          </pre><p class="optional__text">В&nbsp;<strong>TypeScript</strong> допускается только одна реализация перегруженной функции. Остальные - только сигнатуры.</p><p class="optional__text">Реализация должна сама &laquo;распознать&raquo; с&nbsp;помощью `typeof` или проверок, какие аргументы были переданы и&nbsp;как действовать.</p><p class="optional__text">Пример:</p><pre class="pre">
+function add(a: string, b: string): string;
+function add(a: number, b: number): number;
+function add(a: any, b: any): any {
+  if (typeof a === "string" && typeof b === "string") {
+    return "string";
+  } else if (typeof a === "number" && typeof b === "number") {
+    return "number";
+  } else {
+    return "any";
+  }
+}
           </pre><br><pre class="pre">
 <i>// Перегрузка: вариант с классом</i>
 class Calculator {
