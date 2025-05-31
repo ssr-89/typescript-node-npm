@@ -1,0 +1,141 @@
+<!doctype html><html lang="ru"></html><head><link rel="icon" href="favicon.ico"><link href="styles.c7c243772ad14777a948.css" rel="stylesheet"></head><meta charset="UTF-8"><title>Тестирование</title><body><div class="preloader" id="preloader"><div class="preloader__loader"><div class="wrap-prelodaer-img"><div class="preloader-img"><div></div></div></div></div></div><div class="wrapper hide" id="wrapper"><header class="header scrollto" id="header"><div class="header__container flex"><button class="header__burger header-burger btn flex" id="burger"><span class="header-burger__line"></span></button><a class="header__logo header-logo link" href="#">S</a><nav class="header__nav"><ul class="header__menu header-menu list flex"><li class="header-menu__item"><a class="header-menu__link link" href="./index.html"><span class="header-menu__link-text">Node.js и NPM</span></a></li><li class="header-menu__item"><a class="header-menu__link link" href="./typescript.html"><span class="header-menu__link-text">TypeScript</span></a></li><li class="header-menu__item"><a class="header-menu__link link" href="./testing.html"><span class="header-menu__link-text">Тестирование</span></a></li></ul></nav></div></header><main class="main" id="main"><section class="hero" id="hero"><div class="hero__container"><h1 class="hero__title">Тестирование</h1><p class="hero__text"><strong>Тестирование</strong>&nbsp;&mdash; это процесс проверки корректности работы кода.</p><p class="hero__text">Цель тестирования&nbsp;&mdash; убедиться, что программы, функции или отдельные части вашего кода (модули) работают ожидаемым образом, находить ошибки (баги) до&nbsp;того, как они попадут в&nbsp;рабочее приложение.</p><ol class="hero__list hero-list"><li class="hero-list__item"><p class="hero__text"><strong>UNIT тесты</strong>&nbsp;&mdash; это код, который проверяет работу определённого модуля.</p></li><li class="hero-list__item"><p class="hero__text"><strong>Интеграционные тесты</strong>&nbsp;&mdash; это тесты, в&nbsp;которых проводится проверка взаимосвязи разных модулей в&nbsp;изолированном окружении.</p></li><li class="hero-list__item"><p class="hero__text"><strong>Функциональное тестирование</strong>&nbsp;&mdash; проверка конкретных функций приложения с&nbsp;точки зрения пользователя.</p></li><li class="hero-list__item"><p class="hero__text"><strong>End-to-End тесты (E2E тесты)</strong>&nbsp;&mdash; это тесты, которые тестируют целые пользовательские сценарии.</p></li><h2 class="hero__heading">Основные инструменты для тестирования:</h2></ol><ul class="hero__list hero-list"><li class="hero-list__item"><p class="hero-list__text"><strong>Jest</strong>&nbsp;&mdash; современный тестовый фреймворк, часто используется с&nbsp;React.</p></li><li class="hero-list__item"><p class="hero-list__text"><strong>Mocha</strong> и&nbsp;<strong>Chai</strong>&nbsp;&mdash; популярная связка для тестирования.</p></li><li class="hero-list__item"><p class="hero-list__text"><strong>Jasmine</strong>&nbsp;&mdash; тестовый фреймворк без необходимости в&nbsp;сторонних assertion библиотек.</p></li><li class="hero-list__item"><p class="hero-list__text"><strong>Cypress</strong>, <strong>Puppeteer</strong>, <strong>Playwright</strong>&nbsp;&mdash; для автоматизации браузерных и&nbsp;E2E-тестов</p></li></ul><nav class="hero__nav"><ul class="hero__menu hero-menu list flex"><li class="hero-menu__item"><a class="hero-menu__link link" href="#hero"><span class="hero-menu__link-text">Тестирование</span></a></li><li class="hero-menu__item"><a class="hero-menu__link link" href="#jest"><span class="hero-menu__link-text">Фреймворк Jest</span></a></li><li class="hero-menu__item"><a class="hero-menu__link link" href="#methods-jest"><span class="hero-menu__link-text">Методы Jest</span></a></li></ul></nav></div></section><section class="jest" id="jest"><div class="jest__container"><h2 class="jest__title">Фреймворк Jest</h2><p class="jest__text"><a class="jest__link" href="https://jestjs.io/ru/" target="_blank">Jest</a>&nbsp;&mdash; это фреймворк для тестирования <strong>JavaScript</strong> с&nbsp;акцентом на&nbsp;простоту.</p><p class="jest__text">Работает с&nbsp;проектами, использующими <a class="hero__link" href="https://babeljs.io/" target="_blank">Babel</a>, <a class="hero__link" href="https://www.typescriptlang.org/" target="_blank">TypeScript</a>, <a class="hero__link" href="https://nodejs.org/en" target="_blank">Node</a>, <a class="hero__link" href="https://react.dev/" target="_blank">React</a>, <a class="hero__link" href="https://angular.dev/" target="_blank">Angular</a>, <a class="hero__link" href="https://vuejs.org/" target="_blank">Vue</a> и&nbsp;многое другое!</p><br><h3 class="jest__heading">Установка Jest</h3><code>npm i -D jest</code><p class="jest__text">В "scripts" файла package.json прописать:</p><code>"test": "jest",</code><br><br><h3 class="jest__heading">Установка Jest для TypeScript</h3><pre class="pre">npm i -D ts-jest <i>// основной пакет</i>
+
+npm i -D @types/jest <i>// дополнительный пакет</i>
+
+<i>// в tsconfig.json в раздел "compilerOptions"</i>
+"types": [
+  "jest"
+],
+
+<i>// в корень проекта добавить файл jest.config.cjs</i>
+<i>// в нём прописать настройки:</i>
+module.exports = {
+  preset: "ts-jest", 
+}
+<i>// они обеспечивают возможность использования инструментов для написания тестов в коде</i>
+
+<i>// прописать команду:</i>
+npx test 
+<i>// и написать ответ y или yes на вопрос</i></pre></div></section><section class="methods-jest" id="methods-jest"><div class="methods-jest__container"><h2 class="methods-jest__heading">Методы тестирования в Jest</h2><ol class="methods-jest__list methods-jest-list"><li class="methods-jest-list__item"><h3 class="methods-jest-list__title">Метод toBe (простой вариант)</h3><p class="methods-jest-list__text">Метод toBe используется для примитивов.</p><pre class="pre"><i>// task_01.js</i>
+function reverseString(str) {
+  let str2 = str.split('').sort(() =&gt; -Infinity).join('');
+  console.log(str2);
+  return str2;
+}
+
+module.exports = revertseString;
+
+<i>// reverse_string.test.js</i>
+const reverseString = require('./task_01');
+
+test(
+  'Проверка реверса строки:',
+  () =&gt; {
+    expect(reverseString('hello www')).toBe('www olleh');
+  }
+);</pre><code>npm test</code></li><li class="methods-jest-list__item"><h3 class="methods-jest-list__title">Метод toBe (массив тестов)</h3><pre class="pre"><i>// task_01.js</i>
+function reverseString(str) {
+  let str2 = str.split('').sort(() =&gt; -Infinity).join('');
+  console.log(str2);
+  return str2;
+}
+
+module.exports = revertseString;
+
+<i>// reverse_string.test.js</i>
+const reverseString = require('./task_01');
+
+describe(
+  "Проверка",
+  () =&gt; {
+    const testCases = [
+      {
+        inString: 'hello',
+        expected: 'olleh'
+      },
+      {
+        inString: 'blin ha',
+        expected: 'ah nilb'
+      },
+      {
+        inString: 'Привет. Как дела?',
+        expected: '?алед каК .тевирП'
+      }
+    ];
+
+    testCases.forEach(test =&gt; {
+      it (
+        `Входящая строка: ${test.inString}. Ожидание: ${test.expected}.`,
+        () =&gt; {
+          const res = reverseString(test.inString);
+          expect(res).toBe(test.expected)
+        }
+      )
+    });
+  }
+);</pre><code>npm test</code></li><li class="methods-jest-list__item"><h3 class="methods-jest-list__title">Метод toEqual</h3><pre class="pre"><i>// task_02.js</i>
+function filterArray(arr) {
+  return arr.filter((item, index) =&gt; index % 2 === 0);
+}
+
+module.exports = filterArray;
+
+<i>// filter_array.test.js</i>
+const arrayFilter = require('./task_02');
+
+describe(
+  'Фильтрация массива',
+  () =&gt; {
+    const testCases = [
+      {
+        in: [0, 1, 2, 3, 4],
+        expected: [0, 2, 4]
+      },
+      {
+        in: [true, false, true, false, true, false],
+        expected: [true, true, true]
+      },
+    ];
+
+    testCases.forEach(test =&gt; {
+      it(
+        `in: ${test.in} expected: ${test.expected}`,
+        () =&gt; {
+          const res = arrayFilter(test.in);
+          expect(res).toEqual(text.expected);
+        }
+      )
+    });
+  }
+);</pre></li><li class="methods-jest-list__item"><h3 class="methods-jest-list__title">Методы toBeCreaterThanOrEqual и toBeLessThanOrEqual для проверки диапазонов</h3><pre class="pre"><i>// task_03.js</i>
+function randomInt(min, max) {
+  let rand = min + Math.random() * (max + 1 - min);
+  return Math.floor(rand);
+}
+
+module.exports = randomInt;
+
+<i>// random.test.js</i>
+const randomInt = require('./task_03');
+
+describe("Тестирование случайных чисел", () =&gt; {
+  testCases = [
+    {
+      from: 100,
+      to: 110,
+    },
+    from: 200,
+    to: 201,
+  ];
+  testCases.forEach(test =&gt; {
+    it(
+      `from: ${test.form} to: ${test.to}`,
+      () =&gt; {
+        const res = randomInt(test.from, test.to);
+        console.log(res);
+        expect(res).toBeCreaterThanOrEqual(test.form); <i>// Ожидание, что res будет равен или больше, чем test.from</i>
+        expect(res).toBeLessThanOrEqual(test.to); <i>// Ожидание, что res будет равен или меньше, чем test.to</i>
+      }
+    );
+  });
+});</pre></li></ol></div></section></main><footer class="footer section-scroll" id="footer"><div class="footer__container"><h2 class="footer__title">FOOTER</h2></div></footer></div><script defer="defer" src="scripts.815658e97cd3da4130cb.js"></script></body>
